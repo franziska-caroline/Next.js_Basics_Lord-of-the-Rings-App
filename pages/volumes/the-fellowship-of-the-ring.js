@@ -13,7 +13,6 @@ export default function Volume1() {
         <Link href="/volumes">Back</Link>
       </nav>
       <main>
-        <Link href="/volumes">Back</Link>
         <h1>{book.title}</h1>
         <p>{book.description}</p>
         {book.books.map((book) => {
