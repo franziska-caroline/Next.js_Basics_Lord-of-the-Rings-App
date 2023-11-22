@@ -17,11 +17,11 @@ export default function VolumeDetail() {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{volume.title}</title>
       </Head>
       <nav>
         {" "}
-        <Link href="/volumes"> ← Back to all Volumes</Link>
+        <Link href="/volumes">← All Volumes</Link>
       </nav>
       <main>
         <h1>{volume.title}</h1>
