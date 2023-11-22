@@ -4,10 +4,6 @@ import { introduction } from "../../lib/data";
 export default function Volumes() {
   return (
     <>
-      <nav>
-        {" "}
-        <Link href="/">Back</Link>
-      </nav>
       <main>
         <h1>Lord of the Rings</h1>
         <p>{introduction}</p>
