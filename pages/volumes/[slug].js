@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styled from "styled-components";
 import { volumes } from "../../lib/data";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -47,6 +48,8 @@ export default function VolumeDetail() {
           height={230}
           alt="The return of the king"
         />
+      </main>
+      <footer>
         {nextVolume && (
           <button onClick={() => NavigateToSlug(nextVolume.slug)}>Next</button>
         )}
@@ -55,7 +58,7 @@ export default function VolumeDetail() {
             Previous
           </button>
         )}
-      </main>
+      </footer>
     </>
   );
 }
