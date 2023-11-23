@@ -32,7 +32,7 @@ export default function Volumes() {
             </li>
           ))}
         </ul>
-        <button onClick={RandomVolume}>Navigate to randome Volume</button>
+        <button onClick={RandomVolume}>Navigate to random Volume</button>
       </main>
     </>
   );

@@ -10,6 +10,14 @@ export default function VolumeDetail() {
 
   const volume = volumes.find((volume) => volume.slug === slug);
 
+  const currentIndex = volumes.indexOf(volume);
+  const nextVolume = volumes.at(currentIndex + 1);
+  const previousVolume = currentIndex > 0 ? volumes.at(currentIndex - 1) : null;
+
+  function NavigateToSlug(targetSlug) {
+    router.push(`/volumes/${targetSlug}`);
+  }
+
   if (!volume) {
     return <h2>Not Found!</h2>;
   }
@@ -39,6 +47,14 @@ export default function VolumeDetail() {
           height={230}
           alt="The return of the king"
         />
+        {nextVolume && (
+          <button onClick={() => NavigateToSlug(nextVolume.slug)}>Next</button>
+        )}
+        {previousVolume && (
+          <button onClick={() => NavigateToSlug(previousVolume.slug)}>
+            Previous
+          </button>
+        )}
       </main>
     </>
   );
