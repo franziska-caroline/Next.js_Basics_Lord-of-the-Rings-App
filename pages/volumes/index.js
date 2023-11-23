@@ -42,9 +42,7 @@ export default function Volumes() {
             </StyledListItem>
           ))}
         </StyledList>
-        <StyledButton onClick={RandomVolume}>
-          Navigate to random Volume
-        </StyledButton>
+        <StyledButton onClick={RandomVolume}>Random Volume</StyledButton>
       </StyledMain>
     </>
   );
@@ -56,10 +54,6 @@ const StyledTitle = styled.h1`
 
 const StyledMain = styled.main`
   color: var(--color-earth);
-`;
-
-const Body = styled.body`
-  background-color: var(--color-clouds);
 `;
 
 const StyledIntro = styled.p`
@@ -106,6 +100,7 @@ const StyledLink = styled(Link)`
 
 const StyledButton = styled.button`
   background-color: var(--color-smoke);
+  font: var(--font-title);
   border: none;
   width: 100%;
   padding: 1rem;

@@ -8,10 +8,10 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 3rem;
+    margin: 2.5rem;
     font: var(--font-family);
     background-color: var(--color-clouds);
-    color: var(--color-earth);
+    color: var(--color-earth)
   }
 
   :root {
